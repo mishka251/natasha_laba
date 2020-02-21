@@ -1,2 +1,2 @@
-# natasha_lba
+# natasha_laba
 Simple django project
