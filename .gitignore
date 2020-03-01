@@ -127,4 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-/natasha_laba/settings.py
+/vpg/settings.py
