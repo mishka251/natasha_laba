@@ -17,7 +17,7 @@ class Patient(models.Model):
     note = models.BinaryField(null=True)
 
 
-class Number(models.Model):
+class Measurement(models.Model):
     # id автоатически
     #дата-время
     datetime = models.DateTimeField()

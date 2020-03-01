@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+<h1> Working</h1>
+
+<table>
+    <thead>
+    <tr>
+        <td>
+            surname
+        </td>
+        <td>
+            name
+        </td>
+        <td>
+            patronymic
+        </td>
+        <td>
+            birth_date
+        </td>
+        <td>
+            note
+        </td>
+        <td>
+            id
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for patient in patients%}
+    <tr>
+        <td>
+            {{patient.surname}}
+        </td>
+        <td>
+            {{patient.name}}
+        </td>
+        <td>
+            {{patient.patronymic}}
+        </td>
+        <td>
+            {{patient.birth_date}}
+        </td>
+        <td>
+            {{patient.note}}
+        </td>
+        <td>
+            {{patient.id}}
+        </td>
+    </tr>
+
+    {%endfor%}
+    </tbody>
+</table>
+
+<table>
+    <thead>
+    <tr>
+        <td>
+            datetime
+        </td>
+        <td>
+            result
+        </td>
+        <td>
+            citation
+        </td>
+        <td>
+            etc
+        </td>
+        <td>
+            patient
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for object in measurement%}
+    <tr>
+        <td>
+            {{object.datetime}}
+        </td>
+        <td>
+            {{object.result}}
+        </td>
+        <td>
+            {{object.citation}}
+        </td>
+        <td>
+            {{object.ect}}
+        </td>
+        <td>
+            {{object.patient}}
+        </td>
+    </tr>
+
+    {%endfor%}
+    </tbody>
+</table>
+</body>
+</html>

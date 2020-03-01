@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'natasha_laba.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'vpg.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
